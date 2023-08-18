@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intelligent Tutoring System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Student Advising System</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Login Card -->
+      <div class="col-md-5">
+        <div class="card">
+          <div class="card-header">Register</div>
+          <div class="card-body">
+            <form action='/add_user' method='POST'>
+              <div class="form-group">
+                <label for="username">Name</label>
+                <input class="form-control" type="text" name="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="username">Email</label>
+                <input class="form-control" type="email" name="uemail" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="upassword" placeholder="Password" pattern=".{8,}"   required title="8 characters minimum">
+              </div>
+              <div class="text-center">
+              <button type="submit" class="btn btn-primary center">Register</button>
+              </div>
+              <br>
+              <div>              
+              <a class="create" href="/"> Already have an account? Login </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+      <div class="col-md-7 bg-image"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkv
+6666
