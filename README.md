@@ -1,4 +1,4 @@
-#Firstly Run the Flask Server with Database Connection
+# Firstly Run the Flask Server with Database Connection
 
 This repository contains a simple Flask server that connects to a database. The server is designed to serve as a starting point for building web applications that require database functionality. It demonstrates how to set up a basic Flask application and establish a connection to a SQLite database.
 
@@ -67,5 +67,5 @@ Before you begin, ensure you have the following installed:
 3. Open a web browser and navigate to `http://127.0.0.1:5000/` to access the running Flask application.
 
 
-#Activate the Vue Js application from "ITS SYSTEM" folder, open the readme.md file to run the server.
+# Activate the Vue Js application from "ITS SYSTEM" folder, open the readme.md file to run the server.
 
